@@ -1,0 +1,174 @@
+.home {
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 92.85%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: "Reckless Neue", Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L";
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-buttons {
+    margin-left: auto;
+    font-size: 20px;
+    font-family: "Reckless Neue", Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L";
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 2px solid #fff;
+    padding: 12px;
+}
+
+.hero-banner {
+    color: #fff;
+    padding-top: 40px;
+}
+
+.hero-name {
+    font-size: 100px;
+    margin-bottom: 0px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name-text {
+    animation: slideIn 1s ease-out forwards;
+    display: inline-block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-description {
+    padding: 0 30px;
+    max-width: 970px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.header-img {
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid white; */
+}
+
+.footer-buttons {
+    padding-top: 10.75em;
+}
+
+.social-connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding-bottom: 2.75em;
+}
+
+.social-icon {
+    max-width: 48px;
+    height: 48px;
+}
+
+.cta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta-heading {
+    color: #fff;
+    text-align: center;
+    letter-spacing: -.02em;
+    font-size: 56px;
+    line-height: 1;
+    padding-bottom: 60px;
+}
+
+.btn-fadeIn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 24px;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.btn-fadeIn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 0;
+  transition: bottom 0.4s ease;
+  color: #0000;
+}
+
+.btn-fadeIn:hover::before {
+  bottom: 0;
+}
+
+.btn-fadeIn span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.btn-fadeIn:hover span {
+  color: black;
+}
+
+.back-to-top-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 2s , height 2s ,   transform 2s;
+}
+
+.block:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
