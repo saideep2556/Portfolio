@@ -4,65 +4,155 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Saideep Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="index.js"></script>
     </head>
     <body class="home container">
-        <header id="navigation">
+        <header id="desktop-navigation">
             <div class="navbar">
                 <a class="header-logo" href="#">
-                <img class="header-img" src="assets/1.png" alt="header-logo"></a>
+                    <img class="header-img" src="assets/3.png" alt="header-logo">
+                </a>
                 <div class="header-buttons">
-                    <a href="assets/resume.pdf" class="resume nav-item btn-fadeIn" download><span>Resume</span>
-                        
-                    </a>
-                    <a href="#footer" class="contact nav-item btn-fadeIn"><span>Get In Touch</span></a>
+                    <a href="#about" class="nav-item nav-item-about"><span>About</span></a>
+                    <a href="#experience" class="nav-item nav-item-exp"><span>Experience</span></a>
+                    <a href="#footer" class="nav-item nav-item-footer"><span>Get In Touch</span></a>
+                    
                 </div>
             </div>
         </header>
-        <div class="block"></div>
-        <div class="hero-banner">
-            <h1 class="hero-name word-container" id="name-text">
-                <span class="name-text">Saideep Somineni</span></h1>
-            <div class="hero-description">
-                “Front-end developer passionate about crafting clean, responsive, and user-focused web experiences. 
-                Experienced in building dynamic e-commerce interfaces, optimizing performance, and ensuring accessibility. Skilled at turning ideas into intuitive designs that work seamlessly across devices.”        
+        <!-- <div class="block"></div> -->
+         <!-- <header id="hamburger-navigation"> -->
+        <div class="hero-banner d-flex justify-content-between flex-column flex-sm-row">
+            <picture class="image-section d-flex col-12 col-md-4">
+                <img class="img-cover" src="saideep.jpg" alt="saideep">
+            </picture>
+            <div class="content-section col-12 col-md-8 text-center d-flex justify-content-center flex-column">
+                <div class="hello-text text-grey">Hello, I'm</div>
+                <h1 class="hero-name word-container name-textt" id="name-text">
+                    Saideep Somineni
+                </h1>
+                <div class="hero-description text-grey">
+                    A creative <span class="designation-text">frontend developer</span> turning ideas into intuitive, responsive web experiences that adapt seamlessly across devices and platforms.      
+                </div>
+                <div class="resume">
+                     
+                    <a href="assets/resume.pdf" class="btn-fadeIn" download>
+                        <img class="download-icon" src="assets/download.svg" alt="" title="">
+                        <span>Resume</span></a>
+                </div>
             </div>
         </div>
-        <footer>
-            <div id="footer" class="footer-buttons">
-                <div class="social-connect">
-                    <a href="https://www.linkedin.com/in/saideepsomineni/" target="_blank" class="social-link w-inline-block">
-                        <div class="social-icon w-embed">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                            </svg>
-                        </div>
-                    </a>
 
-                    <a href="https://www.instagram.com/saideep_somineni/" target="_blank" class="social-link w-inline-block">
-                        <div class="social-icon w-embed">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                            </svg>
+        <div class="about-section" id="about">
+            <div class="about-title d-block">A Little Bit About Me</div>
+            <div class="about-me d-flex flex-sm-row flex-column justify-content-between">
+                <div class="text-section col-12 col-md-7">
+                    <div class="about-summary d-block">
+                        I'm Saideep Somineni, a Computer Science and Engineering graduate from Vellore Institute of Technology, with a specialization in Data Analytics and a CGPA of 8.7. Currently working as a Senior Engineer SFCC at Kimberly-Clark, I bring 2.6 years of experience in Salesforce Commerce Cloud development and e-commerce solutions.
+                        I began my journey as an SFCC Intern, where I gained foundational knowledge of SFCC architecture, ISML templating, and e-commerce workflows.<br>
+                        Transitioning into a full-time SFCC Developer role, I specialized in Front-End Development, crafting responsive, cross-browser-compatible UI pages using ISML, JavaScript, SCSS, Bootstrap, and AJAX. I built reusable Page Designer templates and integrated UI components with Pipelines, Controllers, and the SFRA framework. My work spanned core e-commerce flows like Checkout, PLP, PDP, Gift Cards, and user journeys such as Login and Registration.<br>
+                        In Test Automation, I developed Selenium scripts for functional and regression testing, ensuring robust feature coverage and smooth deployments.<br>
+                        Additionally, I managed Solr Server Maintenance, resolving server issues, optimizing configurations, and ensuring high availability for search functionalities.
+                    </div>
+                </div>
+                <div class="work-sec col-12 col-md-5">
+                    <ul class="job-list">
+                        <div class="position d-flex flex-sm-row">
+                            <div class="job-year">2025</div>
+                            <div class="job-position">
+                                <p class="job-title">Senior Engineer SFCC</p>
+                                <span class="job-company">Kimberly-Clark</span><br>                               
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="cta-wrapper">
-                    <div class="cta-heading">
-                        Looking for a Frontend Developer?
-                    </div>
-                    <div class="cta-button">
-                        <a href="mailto:saideepsomineni99@gmail.com" class="cta-link btn-fadeIn"><span>WRITE TO ME</span></a>
-                    </div>
-                </div>
-                <div class="back-to-top-button">
-                    <a href="javascript:void(0);" class="back-to-top">
-                        <span class="fs-16 lh-16 fs-sm-18 lh-sm-27 fw-500 mr-3">Back to top</span>
-                    </a>
+                        <div class="position d-flex flex-sm-row">
+                            <div class="job-year">2024</div>
+                            <div class="job-position">
+                                <p class="job-title">SFCC Developer</p>
+                                <span class="job-company">Kimberly-Clark</span><br>                               
+                            </div>
+                        </div>
+                        <div class="position d-flex flex-sm-row">
+                            <div class="job-year">2023</div>
+                            <div class="job-position">
+                                <p class="job-title">Intern</p>
+                                <span class="job-company">Kimberly-Clark</span><br>                               
+                            </div>
+                        </div> 
+                    </ul>
                 </div>
             </div>
-        </footer>
+     </div>
+
+     <div class="experience-section" id="experience">
+        <div class="experience-title d-block">Skills & Experiences</div>
+        <ul class="nav nav-tabs">
+            <li class="fe-tab active">
+                <a href="#sfcc-fe" class="active">FrontEnd Development</a>
+            </li>
+            <li class="automation-tab">
+                <a href="#test-automation" class="">Test Automation</a>
+            </li>
+            <li class="solr-tab">
+                <a href="#solr" class="">Solr Servers</a>
+            </li>
+        </ul>
+        <div class="tab-panel">
+            <div id="sfcc-fe" class="tab-pane sfcc-tab active">
+                SFCC
+            </div>
+
+            <div id="test-automation" class="tab-pane automation-tab">
+                Automation
+            </div>
+
+            <div id="solr" class="tab-pane solr-tab">
+                Solr
+            </div>
+        </div>
+     </div>
+
+    <footer>
+        <div id="footer" class="footer-buttons">
+            <div class="social-connect">
+                <a href="https://www.linkedin.com/in/saideepsomineni/" target="_blank" class="social-link w-inline-block">
+                    <div class="social-icon w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/saideep_somineni/" target="_blank" class="social-link w-inline-block">
+                    <div class="social-icon w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="cta-wrapper">
+                <div class="cta-heading">
+                    Looking for a Frontend Developer?
+                </div>
+                <div class="cta-button">
+                    <a href="mailto:saideepsomineni99@gmail.com" class="cta-link btn-fadeIn"><span>WRITE TO ME</span></a>
+                </div>
+            </div>
+            <div class="back-to-top-button btn">
+                <a href="javascript:void(0);" class="back-to-top">
+                    <img class="arrow-up arrow" src="assets/arrow-up.png" alt="up-arrow">
+                    <span class="back-to-top-label">Back to top</span>
+                </a>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+    <path d="M14 9.818H12.312L10.812 11.318H14C14.25 11.318 14.5 11.568 14.5 11.818V14.318C14.5 14.6 14.25 14.818 14 14.818H2C1.719 14.818 1.5 14.6 1.5 14.318V11.818C1.5 11.568 1.719 11.318 2 11.318H5.156L3.656 9.818H2C0.875 9.818 0 10.725 0 11.818V14.318C0 15.443 0.875 16.318 2 16.318H14C15.094 16.318 16 15.443 16 14.318V11.818C16 10.725 15.094 9.818 14 9.818ZM13.5 13.068C13.5 12.662 13.156 12.318 12.75 12.318C12.313 12.318 12 12.662 12 13.068C12 13.506 12.313 13.818 12.75 13.818C13.156 13.818 13.5 13.506 13.5 13.068ZM7.469 11.85C7.594 12.006 7.781 12.068 8 12.068C8.188 12.068 8.375 12.006 8.5 11.85L12.75 7.6C13.063 7.318 13.063 6.85 12.75 6.568C12.469 6.256 12 6.256 11.719 6.568L8.75 9.537V1.068C8.75 0.662 8.406 0.318 8 0.318C7.563 0.318 7.25 0.662 7.25 1.068V9.537L4.25 6.568C3.969 6.256 3.5 6.256 3.219 6.568C2.906 6.85 2.906 7.318 3.219 7.6L7.469 11.85Z" fill="#000"/>
+</svg> -->
