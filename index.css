@@ -5,15 +5,6 @@ body {
     color: #000;
 }
 
-/* .container {
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 85%;
-} */
-
 .navbar {
     display: flex;
     align-items: center;
@@ -27,14 +18,21 @@ body {
 
 .header-buttons {
     margin-left: auto;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .nav-item {
     color: #000;
     text-decoration: none;
     margin: 0 18px;
+    transition: all 0.2s ease;
 }
+
+.nav-item:hover {
+    color: brown;
+    text-underline-offset: 1rem
+}
+
 .content-section {
     padding-left: 80px;
 }
@@ -61,12 +59,58 @@ body {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+.animation-1 {
+    animation: slideIn1 1s ease-out forwards;
+    display: inline-block;
+}
+
+.animation-2 {
+    animation: slideIn1 1.2s ease-out forwards;
+    /* transition-duration: 1s; */
+    transition-delay: 1s;
+    display: inline-block;
+}
+
+.animation-3 {
+    animation: slideIn1 1.5s ease-out forwards;
+    display: inline-block;
+}
+
+.animation-4 {
+    animation: slideIn1 1.6s ease-out forwards;
+    display: inline-block;
+}
+
+@keyframes slideIn1 {
+    from {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -96,7 +140,8 @@ body {
 }
 
 .footer-buttons {
-    padding-top: 10.75em;
+    padding-top: 5.75em;
+    padding-bottom: 3em;
 }
 
 .social-connect {
@@ -176,6 +221,11 @@ body {
     text-align: center;
     justify-content: center;
     padding-top: 45px;
+}
+
+.back-to-top:hover {
+    color: brown;
+    text-decoration: none;
 }
 
 .block {
@@ -263,10 +313,15 @@ body {
 }
 
 .nav-tabs li a.active {
-    color: brown;
-    padding-bottom: 15px;
+    color: white;
+    padding-bottom: 17px;
     border-bottom: 2px solid brown;
-    
+}
+
+.nav-tabs li.active {
+    border: 1px solid brown;
+    padding: 0 8px;
+    background: brown;
 }
 .tab-pane {
     display: none;
@@ -274,4 +329,59 @@ body {
 
 .tab-pane.active {
     display: block;;
+}
+
+.tab-content {
+    padding-top: 40px;
+}
+
+.work-items-list {
+    margin-bottom: 0;
+}
+.work-item {
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+.work-item::marker {
+    color: brown;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+}
+
+.logo-slot {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-slot img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.input-ele {
+    border: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin-bottom: 12px;
+    padding: 4px 2px;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+textarea::placeholder {
+    color: #000;
+}
+
+.btn {
+    margin: 0 auto;
 }
